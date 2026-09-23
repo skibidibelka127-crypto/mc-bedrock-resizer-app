@@ -1,0 +1,31 @@
+# MC Bedrock Resizer
+
+Android-приложение для изменения разрешения экрана в Minecraft Bedrock.
+
+## Как собрать APK
+
+### Вариант 1: Через GitHub Actions (проще всего)
+
+1. Создай новый репозиторий на GitHub
+2. Загрузи файлы main.py и buildozer.spec
+3. Добавь GitHub Action с buildozer (есть готовые шаблоны)
+4. Скачай готовый APK из артефактов
+
+### Вариант 2: Через Linux/WSL
+
+```bash
+pip install buildozer
+sudo apt install -y git zip unzip openjdk-17-jdk python3-pip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev libssl-dev
+buildozer init  # (если нет buildozer.spec)
+buildozer -v android debug
+```
+
+APK появится в папке bin/
+
+## Использование
+
+1. Включи беспроводную отладку на телефоне (Настройки -> Для разработчиков)
+2. Запусти приложение
+3. Выбери пресет или введи свои размеры
+4. Открой Minecraft - игра подстроится
+5. После игры нажми "Сбросить"
