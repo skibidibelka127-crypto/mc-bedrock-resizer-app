@@ -6,6 +6,7 @@ version = 1.0.0
 requirements = python3,kivy
 orientation = portrait
 fullscreen = 0
+source.dir = .
 
 [buildozer]
 log_level = 2
